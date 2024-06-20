@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.container {
+    background-color: rgb(12, 207, 12);
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px; /* Set a maximum width for the container */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.converter input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add border to inputs and select */
+    width: 75%;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+.converter button{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add border to inputs and select */
+    width: 50%;
+    box-sizing: border-box;
+}
+.converter select{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add border to inputs and select */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.converter input::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+.converter button {
+    background-color: #7654ca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 50px; /* Larger padding for a bigger button */
+    font-size: 18px;
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.converter button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.unit-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unit-selection div {
+    width: 100%; /* Full width for each unit selection */
+    margin-bottom: 10px; /* Add space between the dropdowns */
+}
+
+.unit-selection label {
+    margin-bottom: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
